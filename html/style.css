@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/* Styles for all tags */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito";
+    font-weight: 700;
+    color: white;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Animate for hide and show all hud */
+#container{
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* for big items in full size */
+#mainItems{
+    width: 350px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: width 0.7s ease-in-out;
+}
+
+/* for armor in full size  */
+#mainItems-sub-armor{
+    background-color: #1b5d8b;
+}
+
+#armor-line{
+    background-color: #3293d6;
+    transition: width 1s ease-in-out;
+}
+
+#water-line{
+    background-color: rgb(12, 152, 233);
+    transition: width 1s ease-in-out;
+}
+
+#food-line{
+    background-color: rgb(221, 131, 20);
+    transition: width 1s ease-in-out;
+}
+
+/* for heal in full size */
+#mainItems-sub-heal{
+    background-color: rgb(117, 21, 21);
+}
+
+#mainItems-sub-water{
+    background-color: rgb(22, 94, 136);
+}
+
+#mainItems-sub-food{
+    background-color: rgb(141, 83, 13);
+}
+
+#heal-line{
+    background-color: rgb(226, 42, 42);
+    transition: width 1s ease-in-out;
+}
+
+
+/* for line in full size */
+.span-line{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: right;
+    height: 53px;
+}
+
+/* for fix bug mini items in big size */
+.mini-line{
+    margin-right: 20px;
+}
+
+/* for main items in big size */
+.mainItems-sub{
+    background-color: #475b75;
+    margin: 5px 10px;
+    border-radius: 10px;
+    height: 53px;
+    line-height: 53px;
+    float: right;
+}
+
+/* for line in big size */
+.mainItems-line{
+    width: 86%;
+    transition: width 0.5s ease-in-out;
+}
+
+/* for values main items in big size */
+.mainItems-value{
+    margin-left: 10px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* ---------------- LEFT SIDE IN BIG SIZE */
+#leftSide-items{
+    min-width: 8%;
+    max-width: 15%;
+    float: right;
+    overflow: hidden;
+    height: 400px;
+    transition: height 0.5s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+#gang-item{
+    display: none;
+}
+
+#job-item{
+    display: none;
+}
+
+#clock{
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.leftSide-items-sub{
+    background-color: #475b75;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.leftSide-icon{
+    float: left;
+    width: 19px;
+    margin-right: 10px;
+}
+
+.leftSide-items{
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+}
+
+.rank{
+    font-size: 13px;
+    color: rgb(204, 204, 204);
+}
+
+.imageHandler{
+    display: flex;
+    justify-content: center;
+    box-shadow: -1px 0 1px 1px #364558;
+    background-color: #475b75;
+    padding: 10px;
+    float: right;
+    position: absolute;
+    right: 6px;
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+}
+
+/* ------------------------------ */
+
+.imageHandler{
+    align-items: center;
+}
+
+.mainItems-icon{
+    z-index: 10;
+}
+
+.mini-line-short{
+    position: absolute;
+    border-radius: 10px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+/* Baraye fix kardane jaye mini line , bayad be meghdari ke az height kam mishe, be margin-top ezafe beshe */
+
+#heal-mini-line{
+    background-color: rgb(255, 37, 37);
+}
+
+#armor-mini-line{
+    background-color: rgb(0, 119, 255);
+}
+
+#water-mini-line{
+    background-color: rgb(12, 152, 233);
+}
+
+#food-mini-line{
+    background-color: rgb(221, 131, 20);
+}
+
+#id-line{
+    background-color: black;
+    height: 43px;
+}
+
+#userIcon{
+    transition: opacity 0.3s ease-in-out;
+}
+
+#userIcon-ID{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#mainItems-sub-waterandfood{
+    background-color: transparent;
+}
+
+#mainItems-sub-waterandfood > div{
+    border-radius: 10px;
+    float: right;
+    width: 48%;
+    height: 100%;
+}
+
+#mainItems-sub-water{
+    margin-right: 10px;
+    transition: margin-top 0.4s ease-in-out;
+}
+
+#imageHandler-water{
+    right: 170px;
+    transition: right 0.6s ease-in-out;
+}

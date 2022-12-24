@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./html/style.css" />
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <!-- Big items in full size -->
+    <ul id="mainItems">
+
+      <!-- ID and Player Name -->
+      <li class="mainItems-sub">
+
+        <div class="imageHandler">
+          <img src="./html/icons/user.png" class="mainItems-icon" id="userIcon" />
+          <p id="userIcon-ID">-</p>
+        </div>
+
+        <div class="mainItems-line" id="name-line">
+          <p class="mainItems-value" id="name">- (-)</p>
+          <div class="mainItems-line"> <span class="span-line" id="id-line"></span> </div>
+        </div>
+      </li>
+
+      <!-- HP ( Heal ) -->
+      <li class="mainItems-sub" id="mainItems-sub-heal">
+
+        <div class="imageHandler" id="imageHandler-heal">
+          <img src="./html/icons/heart.png" class="mainItems-icon">
+          <span id="heal-mini-line" class="mini-line-short"></span>
+        </div>
+
+        <p id="heal" class="mainItems-value">0 %</p>
+        <div class="mainItems-line"> <span class="span-line" id="heal-line"></span> </div>
+      </li>
+
+      <!-- Armor ( Shield ) -->
+      <li class="mainItems-sub" id="mainItems-sub-armor">
+
+        <div class="imageHandler" id="imageHandler-armor">
+          <img src="./html/icons/shield.png" class="mainItems-icon">
+          <span id="armor-mini-line" class="mini-line-short"></span>
+        </div>
+
+        <p id="armor" class="mainItems-value">0 %</p>
+        <div class="mainItems-line"> <span class="span-line" id="armor-line"></span> </div>
+      </li>
+
+      <!-- Food & Water -->
+      <li class="mainItems-sub" id="mainItems-sub-waterandfood">
+
+        <!-- Food -->
+        <div id="mainItems-sub-food">
+
+          <div class="imageHandler" id="imageHandler-food">
+            <img src="./html/icons/cutlery.png" class="mainItems-icon">
+            <span id="food-mini-line" class="mini-line-short"></span>
+          </div>
+
+          <p id="food" class="mainItems-value">0 %</p>
+          <div class="mainItems-line"> <span class="span-line" id="food-line"></span> </div>
+
+        </div>
+
+        <!-- Water -->
+        <div id="mainItems-sub-water">
+
+          <div class="imageHandler" id="imageHandler-water">
+            <img src="./html/icons/drop.png" class="mainItems-icon">
+            <span id="water-mini-line" class="mini-line-short"></span>
+          </div>
+
+          <p id="water" class="mainItems-value">0 %</p>
+          <div class="mainItems-line"> <span class="span-line" id="water-line"></span> </div>
+
+        </div>
+      </li>
+
+
+    </ul>
+
+    <ul id="leftSide-items">
+      <li class="leftSide-items-sub">
+        <p id="clock">00:00</p>
+      </li>
+
+      <li class="leftSide-items-sub leftSide-items">
+        <img src="./html/icons/dollar.png" class="leftSide-icon">
+        <p id="money">0 $</p>
+      </li>
+
+      <li class="leftSide-items-sub leftSide-items leftSide-job" id="job-item">
+
+        <div class="leftSide-iconHandler">
+          <img src="./html/icons/swat.png" class="leftSide-icon" id="job-icon">
+        </div>
+
+        <div class="leftSide-info-card">
+          <p id="job-name">-</p>
+          <p id="job-rank" class="rank">-</p>
+        </div>
+      </li>
+
+      <li class="leftSide-items-sub leftSide-items leftSide-job" id="gang-item">
+
+        <div class="leftSide-iconHandler">
+          <img src="./html/icons/gang.png" class="leftSide-icon">
+        </div>
+
+        <div class="leftSide-info-card">
+          <p id="gang-name">-</p>
+          <p id="gang-rank" class="rank">-</p>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <script src="./html/index.js"></script>
+</body>
+</html>
