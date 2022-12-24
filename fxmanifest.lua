@@ -4,11 +4,12 @@ use_experimental_fxv2_oal 'yes'
 lua54 'yes'
 game 'gta5'
 --[[ Resource Information ]] --
-name 'Ai_ClothingMenu'
+name 'Status'
 author "Ilia & Wiliam"
 version '1.0.0'
-url 'https://github.com/iamilia'
-description "New Status From Fivem Config Enbale And Can Change Image"
+license      'MIT-License'
+repository   'https://github.com/iamilia/Status'
+description "New Status From Fivem Config Enbale And Can Change Image With multi framework System"
 
 --[[ Manifest ]] --
 dependencies {
@@ -27,4 +28,7 @@ files {
 shared_script "config.lua"
 
 client_scripts "framework/client/*.lua"
-server_scripts "framework/server/*.lua"
+server_scripts {
+    "server.lua",
+    "framework/server/*.lua"
+}
