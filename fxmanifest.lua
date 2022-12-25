@@ -6,7 +6,7 @@ game 'gta5'
 --[[ Resource Information ]] --
 name 'Status'
 author "Ilia & Wiliam"
-version '1.0.0'
+version '1.0.1'
 license      'MIT-License'
 repository   'https://github.com/iamilia/Status'
 description "New Status From Fivem Config Enbale And Can Change Image With multi framework System"

@@ -147,7 +147,7 @@ function animteShortToFull(event) {
     const leftSideItems = $("#leftSide-items");
     const mainItemsValue = $(".mainItems-value");
     const mainItemsUL = $("#mainItems");
-    if (!event) {
+    if (!event.data) {
         event.data = data
     }
     const userIcon = $("#userIcon");
@@ -195,7 +195,7 @@ function animteShortToFull(event) {
 
 // Display items in short size
 function allAndShort(event) {
-    if (!event) {
+    if (!event.data) {
         event.data = data
     }
     const leftSideItems = $("#leftSide-items");
@@ -264,7 +264,7 @@ function fullHandler(event) {
 
 // Display items in full size
 function allAndFull(event) {
-    if (!event) {
+    if (!event.data) {
         event.data = data
     }
     const leftSide = $("#leftSide-items");
@@ -347,10 +347,6 @@ function eventHandler(event) {
     }
 }
 
-// Handle when a data comes from LUA side
-// window.onload = function (e) {
 window.addEventListener("message", (event) => {
     eventHandler(event.data);
 });
-  // }
-
