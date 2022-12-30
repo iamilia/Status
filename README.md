@@ -1,4 +1,4 @@
-<div align='center'><h1><a href='https://discord.gg/BFbDt6yNaj'>We Discord</a></h3></div>
+<div align='center'><h1><a href='https://discord.gg/BFbDt6yNaj'>Our Discord</a></h3></div>
 <br>
 
 # Status
